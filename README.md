@@ -8,7 +8,7 @@ Works with PNG spritesheets authored with a transparent background.
 Supports loading of other image types, but may not correctly handle non-transparent background colours as no colour-key functionality currently exists.
 Please let me know if you would like me to support any extra features.
 
-Play around with it [here](https://bufobufogames.github.io/PSSpritesheetConverter/).
+Play around with it [here](https://bufobufogames.github.io/PS_Spritesheet_Converter/).
 
 [![BufoBufo Logo](docs/toad_logo_cga_small.png)](https://bufobufogames.itch.io/)
 
