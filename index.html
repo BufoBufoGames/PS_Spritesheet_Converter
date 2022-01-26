@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>PuzzleScript Spritesheet Converter</title>
+		<meta name="Author" content="Nathan Dobby - 2022">
+		<meta charset="utf-8">
+		<!link rel="stylesheet" href="../webgl.css" type="text/css">
+		<style>
+			body {
+				margin: auto;
+				border: 0;
+				background-color: DarkGrey;
+				text-align: center;
+				justify-content: center;
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 14px;
+			}
+			h1 {
+				text-align: center;
+				font-size: 32px;
+			}
+			/*input {
+				box-sizing: border-box;
+			}*/
+			textarea {
+				resize: none;
+			}
+			.inputBox {
+				position: absolute;
+				left: 55%;
+				text-align: left;
+				margin-left: 5px;
+			}
+			.labelText {
+				width: auto;
+				right: 45%;
+				position: absolute;
+				text-align: right;
+				margin-right: 5px;
+			}
+			#displayDiv {
+				border: 1px dashed black;
+				width: 256px;
+				height: 256px;
+				position: absolute;
+				right: 50%;
+				margin-right: 5px;
+			}
+			#spriteNameText {
+				position: absolute;
+				left: 50%;
+				margin-left: 5px;
+			}
+			#errorText{
+				color: Red;
+			}
+			#footer {
+				margin: auto;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+				justify-content: center;
+			}
+		</style>
+		<script type="text/javascript" src="PuzzleScript_Spritesheet_Converter.js"></script>
+	</head>
+
+	<body>
+		<h1>PuzzleScript Spritesheet Converter</h1>
+		<input type="file" id="fileInput" accept="image/*" style="border: 1px dashed black;">
+		<br/>
+		<br/>
+		<label class="labelText" for="spriteDimensions">Width / Height Dimension of sprites (1-256):</label>
+		<input id="spriteDimensions" class="inputBox" type="number" name="spriteDimensions" min="1" max="256" step="1" value="16">
+		<br/>
+		<br/>
+		<p id="processingStatus" style="margin: auto; width: 512px; background-color: Grey;">Status: Please Select File</p>
+		<br/>
+		<div id="displayDiv"></div>
+		<textarea id="spriteNameText" name="spriteNameText" rows="16" cols="32" spellcheck="false" placeholder="Output Object Name List&#10-----------------------&#10Enter the list of names for your converted PuzzleScript objects here, separated by whitespace or commas."></textarea>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<input id="convertButton" type="submit" value="Convert Spritesheet"/>
+		<br/>
+		<br/>
+		<textarea id="outputText" name="outputText" rows="20" cols="64" spellcheck="false" placeholder="PuzzleScript Object Data Output"></textarea>
+		<br/>
+		<br/>
+		<input id="copyButton" type="submit" value="Copy to Clipboard"/>
+		<br/>
+		<br/>
+		<textarea id="errorText" name="errorText" rows="5" cols="64" spellcheck="false" placeholder="Error List"></textarea>
+		<div id="footer">
+			<a href="https://bufobufogames.itch.io/"><img src="docs/toad_logo_cga.png" alt="BufoBufo Logo" width="64" height="64"><a/>
+			<p>2022 - <a href="https://bufobufogames.itch.io/">BufoBufo<a/></p>
+		</div>
+	</body>
+</html>
