@@ -78,7 +78,7 @@ function fileSelected()
 		spritesheetImage = new Image();
 		spritesheetImage.onerror = onError;
 		spritesheetImage.onload = onLoad;
-		spritesheetImage.src = URL.createObjectURL(spritesheetFile);;
+		spritesheetImage.src = URL.createObjectURL(spritesheetFile);
 	}
 }
 
